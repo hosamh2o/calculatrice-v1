@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> calcoleter js </title>
+	</head>
+	<body>
+		<style>
+			body{
+				background-color: black;
+				background-color: black;
+			}
+			#main{
+				position: center;
+				padding-left: 500px;
+				background-color: cornflowerblue;
+		        height: 400px;
+				width: 800px;
+		       
+			 
+				
+			}
+			#frist{
+				padding: 2px;
+				border: 2px;
+				box-shadow: 1px;
+				border-bottom-left-radius: 6px;
+				border-bottom-right-radius: 6px;
+				border-top-left-radius: 6px;
+				border-top-right-radius: 6px;
+				border-color: red;
+				 
+				width: 200px;
+				height: 40px;
+				
+			}
+				#scend{
+				width: 200px;
+				height: 40px;
+				padding: 2px;
+				border: 2px;
+				box-shadow: 1px;
+				border-bottom-left-radius: 6px;
+				border-bottom-right-radius: 6px;
+				border-top-left-radius: 6px;
+				border-top-right-radius: 6px;
+				
+			}
+			#recever{
+				width: 200px;
+				height: 40px;
+				padding: 2px;
+				border: 2px;
+				box-shadow: 1px;
+				border-bottom-left-radius: 6px;
+				border-bottom-right-radius: 6px;
+				border-top-left-radius: 6px;
+				border-top-right-radius: 6px;
+				
+			}
+			h4{
+				color: #140e00;
+				padding: 12px;
+			}
+		</style>
+		<div id="main">
+		<div id="center"> 
+				<h4>inter your frist nomber</h4>
+			<input type="text"   id="frist" type="number"/>
+		</div>
+		<div id="center"> 
+			<h4 >inter your scend nomber</h4>
+			<input type="text"    id="scend" type="number"/>
+		</div>
+	<br>
+		<br>
+			<select id ="oparator">
+				<option value="+">+</option>
+				 <option value="-">-</option>
+				 <option value="*">*</option>
+				 <option value="/">/</option>
+			</select>
+		 
+		 
+		<input type="button" value="submit" id="submiit" onclick="calcu();"/>
+	<br>
+		<br>
+		<br>
+		<input type="text" id="recever"  />
+		</div>
+		<script type="text/javascript">
+		  function calcu (){
+			
+		var frist = Number(document.getElementById("frist").value);
+		var scend= Number(document.getElementById("scend").value);
+	 
+			 var oper = document.getElementById("oparator").value;
+			 
+			    if(oper === '+'){
+					 
+					document.getElementById("recever").value = frist+ scend;
+				}
+			
+		    else if(oper === '-'){
+					document.getElementById("recever").value = frist - scend;
+				}
+		   else  if(oper === '*'){
+					document.getElementById("recever").value = frist* scend;
+				}
+		   else {
+				document.getElementById("recever").value = frist/ scend;
+				}
+		}
+	</script>
+	</body>
+	
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
